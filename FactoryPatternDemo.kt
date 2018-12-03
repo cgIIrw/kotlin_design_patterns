@@ -10,7 +10,6 @@ abstract class Factory {
         var p = createProduct(productId)
         return p
     }
-
     protected abstract fun createProduct(productId: String): Product;
 }
 
@@ -27,6 +26,6 @@ object PenFactory : Factory() {
 }
 
 fun main(args: Array<String>) {
-    var oneProduct = PenFactory.product("9527")
+    var oneProduct = PenFactory.product("1024")
     oneProduct.printProductId()
 }
