@@ -20,7 +20,6 @@ class Invoker {
 
     fun invoker() {
         command?.let { it.command01("command01") }
-
     }
 }
 
